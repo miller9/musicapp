@@ -1,19 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @track.title %>
-</p>
+<center>  <!-- aquí centro estos elementos -->
+	<p>
+	  <strong>Title:</strong>
+	  <%= @track.title %>
+	</p>
 
-<p>
-  <strong>Album:</strong>
-  <%= @track.album %>
-</p>
+	<p>
+	  <strong>Album:</strong>
+	  <%= @track.album %>
+	</p>
 
-<p>
-  <strong>Artist:</strong>
-  <%= @track.artist %>
-</p>
+	<p>
+	  <strong>Artist:</strong>
+	  <%= @track.artist %>
+	</p>
+</center>
 
-<%= link_to 'Edit', edit_track_path(@track) %> |
-<%= link_to 'Back', tracks_path %>
+<div align='center'>	<!= otra forma para centrar elementos.. />
+	<%= link_to 'Edit', edit_track_path(@track) %> |
+	<%= link_to 'Back', tracks_path %>
+</div>
