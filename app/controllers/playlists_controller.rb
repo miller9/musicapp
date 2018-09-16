@@ -10,4 +10,25 @@ class PlaylistsController < ApplicationController
 		@playlist = Playlist.find(params[:id])
 	end
 
+	# New give us a form to create a new element
+	def new
+		@playlist = Playlist.new
+	end
+
+	# Create the element in DataBase
+	# Passed params are already filtered
+	def create
+		@playlist = Playlist.new(playlist_params)
+		if @playlist.save
+			redirect_to @playlist
+		else
+			render :new
+		end
+	end
+
+	private	
+	# White list with Accepted Params=name, number_of_votes
+	def playlist_params
+		params.require(:playlist).permit(:name, :number_of_votes)
+	end
 end
