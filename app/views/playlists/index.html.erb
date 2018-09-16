@@ -1,0 +1,19 @@
+<h1>Todas las listas de reproducción</h1>
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Number of votes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- ERB syntaxis to put Ruby Code, in '< % =', = indicates that Ruby Code will print on screen, that way I avoid it in the line of EACH method's -->
+		<%  @playlists.each do |playlist| %>
+		<tr> <!-- Each field shows the info of that elements-->
+			<td><%= playlist.name %></td>
+			<td><%= playlist.number_of_votes %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
