@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+ <p id="notice"><%= notice %></p>
 
 <h1>Tracks</h1>
 
@@ -29,3 +29,10 @@
 <br>
 
 <%= link_to 'New Track', new_track_path %>
+
+<%= form_tag(spotify_search_path, method: :get) do %>
+  <p>
+    <%= text_field_tag :title %>
+    <%= submit_tag 'Search' %>
+  </p>
+<% end %>

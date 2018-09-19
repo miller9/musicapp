@@ -1,4 +1,5 @@
 class PlaylistsController < ApplicationController
+	before_action :authenticate_user!
 	# Save in var all the playlists, then use it in the View to show the info
 	# @ ==> instance var access to Playlist MODEL and gets all of the lists
 	def index

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <center>    <h1>I can put something here..1..</h1>  </center>
+    <center>    <h1>*** MusicApp ***</h1>  </center>
 
   <head>
     <title>Musicapp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <h1> Or something here.......2...</h1>
+    <!-- <h1> Or something here.......2...</h1> -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
     <%= yield %>
   </body>
 </html>
-    <h1>Or maybe here...</h1>
+    <center><h3>-.-. --- -. ..-. .. .- --..-- / ... .. . -. - . / .-.. .- / .- .-. -- --- -. .. .- / . -. / - ..- / -.-. --- .-. .- --.. -. .-.-.- .-.-.</h3></center>
