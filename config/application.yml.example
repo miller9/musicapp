@@ -1,3 +1,6 @@
+# Developer: To run the app, please
+# delete from this file the ".example" extension and then 
+# add your personal developer keys to the respective environment
 development: 
 	SUPER_SECRET_KEY: 'LLAVE_FALSA'
 	SUPER_SECRET_ID: 'ID_FALSO'
