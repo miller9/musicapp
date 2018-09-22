@@ -66,3 +66,6 @@ gem 'figaro'
 gem 'rspotify'
 gem 'pry-byebug'
 gem 'devise'
+
+gem 'bootstrap'
+gem 'jquery-rails'
