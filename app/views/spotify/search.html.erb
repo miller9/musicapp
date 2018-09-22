@@ -1,7 +1,14 @@
 <!-- require 'rspotify' -->
 <h1>Resultados de busqueda</h1>
 <ul> 
+	<h3>Artista:</h3>
 	<% @results.each do |result| %> 
 		<li><%= result.name %></li> 
+	<% end %>
+</ul>
+<ul> 
+	<h3>Canción:</h3>
+	<% @songs.each do |song| %> 
+		<li><%= song.name %></li> 
 	<% end %>
 </ul>
