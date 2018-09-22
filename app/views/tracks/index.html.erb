@@ -33,6 +33,12 @@
 <%= form_tag(spotify_search_path, method: :get) do %>
   <p>
     <%= text_field_tag :title %>
-    <%= submit_tag 'Search' %>
+    <%= submit_tag 'Search Artist' %>
+  </p>
+<% end %>
+<%= form_tag(spotify_search_path, method: :get) do %>
+  <p>
+    <%= text_field_tag :title %>
+    <%= submit_tag 'Search Song' %>
   </p>
 <% end %>
