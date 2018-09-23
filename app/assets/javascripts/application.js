@@ -14,3 +14,10 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require bootstrap-sprockets
+
+// Commenting these lines to delete it soon..
+// = require jquery3
+// = require popper
+// = require bootstrap
+// = require_tree .
