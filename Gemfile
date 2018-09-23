@@ -8,9 +8,10 @@ gem 'rails', '~> 5.2.1'
   # Use sqlite3 as the database for Active Record
   # gem 'sqlite3'
 # Setting up DataBases for development, production and tests
-gem 'sqlite3', group: [:development, :test]
-gem 'pg', group: :production
-#### gem 'pg' # COMMENTING LINE TO CHANGE DATABASE and use SQLITE
+# --> heroku doesn't support ==> gem 'sqlite3', group: [:development, :test]
+  #gem 'pg', group: [:development, :test]
+  #gem 'pg', group: :production
+gem 'pg', group: [:development, :test, :production]# COMMENTING LINE TO CHANGE DATABASE and use SQLITE
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
