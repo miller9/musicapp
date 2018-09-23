@@ -5,8 +5,11 @@ ruby '2.4.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3' 
+  # Use sqlite3 as the database for Active Record
+  # gem 'sqlite3'
+# Setting up DataBases for development, production and tests
+gem 'sqlite3', group: [:development, :test]
+gem 'pg', group: :production
 #### gem 'pg' # COMMENTING LINE TO CHANGE DATABASE and use SQLITE
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -69,3 +72,4 @@ gem 'devise'
 
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'bootstrap-sass'
