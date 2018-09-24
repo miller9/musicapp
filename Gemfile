@@ -18,7 +18,7 @@ gem 'rails', '~> 5.2.1'
 
 gem 'sqlite3', group: [:development, :test] 
 
-gem 'pg'#, group: [:development, :test, :production]# COMMENTING LINE TO CHANGE DATABASE and use SQLITE
+gem 'pg', group: [:production]#, group: [:development, :test, :production]# COMMENTING LINE TO CHANGE DATABASE and use SQLITE
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
