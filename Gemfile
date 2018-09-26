@@ -16,9 +16,11 @@ gem 'rails', '~> 5.2.1'
 #gem 'sqlite3', group: [:development, :test] 
 #gem 'pg', group: :production 
 
-gem 'sqlite3', group: [:development, :test] 
+  # gem 'sqlite3', group: [:development, :test] 
+  # gem 'pg', group: [:production]#, group: [:development, :test, :production]# COMMENTING LINE TO CHANGE DATABASE and use SQLITE
 
-gem 'pg', group: [:production]#, group: [:development, :test, :production]# COMMENTING LINE TO CHANGE DATABASE and use SQLITE
+gem 'pg'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -81,3 +83,6 @@ gem 'devise'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
+
+ruby "2.4.1p111"
+Rails "5.2.1"
